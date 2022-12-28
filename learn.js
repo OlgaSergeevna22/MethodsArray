@@ -242,3 +242,36 @@
 
 // findOutlier([11, 2, 4, 0, 100, 4, 2602, 36])
 // findOutlier([160, 3, 1719, 19, 11, 13, -21])
+
+
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+}
+
+let arraySalaries = Object.values(salaries);
+console.log(arraySalaries.reduce((sum, item) => sum + item, 0));
+
+
+
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+const multiplyNumeric = (obj) => {
+
+    for (let key in obj) {
+
+        if (typeof obj[key] === 'number') {
+
+            obj[key] *= 2;
+        }
+    }
+}
+
+
+console.log(menu);
+multiplyNumeric(menu);
+console.log(menu);
