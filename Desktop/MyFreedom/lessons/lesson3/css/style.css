@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+footer {
+    background-color: blue;
+    padding: 30px;
+}
+
+main {
+    padding: 30px;
+    min-height: 80vh;
+}
+
+.service {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.service a {
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
